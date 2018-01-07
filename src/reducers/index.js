@@ -1,9 +1,7 @@
 import {combineReducers} from 'redux';
- 
+import weatherReducer from './reducer_weater';
 const rootReducer=combineReducers({
-	books:function(){
-		return[]
-	}
+	weather:weatherReducer
 })
 
 export default rootReducer;
